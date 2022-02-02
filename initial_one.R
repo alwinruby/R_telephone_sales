@@ -1,0 +1,1 @@
+qplot(extrovert, revenue, data = emp_sim)
