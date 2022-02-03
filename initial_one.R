@@ -1,3 +1,5 @@
 qplot(extrovert, revenue, data = emp_sim)
 qplot(extrovert, revenue, data = emp_sim, geom = 'boxplot')
 qplot(extrovert, revenue, data = emp_sim, geom = 'violin')
+emp_sim %>% summarise(avg = mean(revenue))
+emp_sim %>% summarise(avg = mean(revenue), med = median(revenue), count = n())
